@@ -1,0 +1,4 @@
+main: net.awesomepowered.discordharmony.BukkitDiscordHarmony
+version: ${project.version}
+author: LaxWasHere
+name: DiscordHarmony

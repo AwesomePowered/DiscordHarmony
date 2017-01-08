@@ -1,0 +1,5 @@
+ChatFormat: '&f[&cD&f]&a%SENDER% &f> &a%MESSAGE%'
+discord:
+  channel: '173889390060371968'
+  username: discordbot@discordmail.com
+  password: 'teamspeakthre3'

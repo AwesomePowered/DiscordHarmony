@@ -1,0 +1,4 @@
+main: net.awesomepowered.discordharmony.BungeeDiscordHarmony
+version: ${project.version}
+author: LaxWasHere
+name: DiscordHarmony
