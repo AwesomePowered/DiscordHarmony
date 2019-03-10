@@ -7,6 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 /**
@@ -31,6 +32,15 @@ public class BukkitListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent ev) {
         m.sendMessage("[+] " + ev.getPlayer().getName(), Harmony.discordChannel);
+    }
+
+    @EventHandler
+    public void onConnect(PlayerLoginEvent ev) {
+        String name = ev.getPlayer().getName();
+        String host = ev.getAddress().getHostAddress();
+        String pIP = ev.getAddress().getAddress().toString();
+        String result = ev.getResult().toString();
+        m.sendMessage("[+] " + name + "("+pIP+")" + " using " + host + " " + result, Harmony.modChannel);
     }
 
 }

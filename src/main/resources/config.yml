@@ -1,5 +1,13 @@
 ChatFormat: '&f[&cD&f]&a%SENDER% &f> &a%MESSAGE%'
+UseToken: true
+BridgeBungee: true
 discord:
   channel: '173889390060371968'
-  username: discordbot@discordmail.com
-  password: 'teamspeakthre3'
+  modchan: '173889390060371968'
+  token: 'adsf123.1231938.lolufukasdada77rff'
+  admins:
+    - '171458204167831552'
+BotStatus:
+  - 'on PoweredByAwesome Network'
+  - 'with {ONLINE} players.'
+  - 'Bridging {SERVERCOUNT} servers'
