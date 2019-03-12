@@ -25,4 +25,9 @@ public interface Server {
      */
     void kickPlayer(String name, String reason);
 
+    /*
+    Executes a command in the console.
+     */
+    void consoleCommand(String command);
+
 }

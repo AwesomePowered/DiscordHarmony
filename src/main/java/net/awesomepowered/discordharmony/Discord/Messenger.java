@@ -6,7 +6,7 @@ package net.awesomepowered.discordharmony.Discord;
 public class Messenger {
 
     public void sendMessage(String message, String channel) {
-        Harmony.getBot().getTextChannelById(channel).get().sendMessage(message);
+        Harmony.getBot().getTextChannelById(channel).ifPresent(chan -> chan.sendMessage(message));
     }
 
 }

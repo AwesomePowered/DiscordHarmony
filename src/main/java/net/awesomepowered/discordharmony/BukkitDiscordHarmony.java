@@ -67,4 +67,9 @@ public class BukkitDiscordHarmony extends JavaPlugin implements Server {
             p.kickPlayer(ChatColor.translateAlternateColorCodes('&', reason));
         }
     }
+
+    @Override
+    public void consoleCommand(String command) {
+        getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+    }
 }

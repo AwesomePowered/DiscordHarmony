@@ -3,6 +3,7 @@ package net.awesomepowered.discordharmony.Discord;
 import de.btobastian.sdcf4j.CommandHandler;
 import de.btobastian.sdcf4j.handler.JavacordHandler;
 import net.awesomepowered.discordharmony.Discord.commands.CommandBroadcast;
+import net.awesomepowered.discordharmony.Discord.commands.CommandConsole;
 import net.awesomepowered.discordharmony.Discord.commands.CommandKick;
 import net.awesomepowered.discordharmony.Discord.commands.CommandList;
 import net.awesomepowered.discordharmony.Global.Keywords;
@@ -38,6 +39,7 @@ public class Discord {
         commandHandler.registerCommand(new CommandList());
         commandHandler.registerCommand(new CommandBroadcast());
         commandHandler.registerCommand(new CommandKick());
+        commandHandler.registerCommand(new CommandConsole());
     }
 
     private static void spoolStatus() {

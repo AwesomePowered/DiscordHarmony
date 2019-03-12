@@ -29,7 +29,7 @@ public class BungeeListener implements Listener {
         String name = p.getName();
         String server = p.getServer().getInfo().getName();
         m.sendMessage("[" + name + "]" + "(" + server + ") " + message, Harmony.discordChannel);
-        if (BungeeDiscordHarmony.instance.config.getBoolean("BungeeBridge", true)) {
+        if (BungeeDiscordHarmony.instance.config.getBoolean("BridgeBungee", true)) {
             for (ProxiedPlayer pp : BungeeDiscordHarmony.instance.getProxy().getPlayers()) {
                 if (!pp.getServer().getInfo().getName().equalsIgnoreCase(server)) {
                     pp.sendMessage("[" + name + "]" + "(" + server + ") " + ChatColor.stripColor(message));

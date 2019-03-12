@@ -87,4 +87,9 @@ public class BungeeDiscordHarmony extends Plugin implements Server {
             p.disconnect(ChatColor.translateAlternateColorCodes('&', reason));
         }
     }
+
+    @Override
+    public void consoleCommand(String command) {
+        getProxy().getPluginManager().dispatchCommand(getProxy().getConsole(), command);
+    }
 }
